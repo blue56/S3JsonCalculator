@@ -7,4 +7,5 @@ public class CalculatorRequest
     public string Path { get; set; }
     public string Field {get; set;}
     public string Calculation {get; set;}
+    public bool Overwrite{get; set;}
 }

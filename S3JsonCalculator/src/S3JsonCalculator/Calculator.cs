@@ -39,7 +39,17 @@ public class Calculator
             double result = engine.Evaluate(Request.Calculation, variables);
 
             // Add computed field
-            n.Add(Request.Field, result);
+            if (n[Request.Field] != null)
+            {
+                if (Request.Overwrite)
+                {
+                    n[Request.Field] = result;
+                }
+            }
+            else
+            {
+                n.Add(Request.Field, result);
+            }
         }
 
         var stream = new MemoryStream(Encoding.UTF8.GetBytes(sourceDocument.ToString()));
