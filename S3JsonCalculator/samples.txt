@@ -1,0 +1,7 @@
+{
+"Region": "eu-north-1",
+"Bucketname": "costhubcloud",
+"Path": "test/exchangerates.json",
+"Calculation": "var1*var2",
+"Field": "Uplift"
+}

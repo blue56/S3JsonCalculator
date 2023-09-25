@@ -1,0 +1,2 @@
+dotnet new lambda.EmptyFunction --name S3JsonCalculator
+dotnet add package Adletec.Sonic --version 1.2.0
